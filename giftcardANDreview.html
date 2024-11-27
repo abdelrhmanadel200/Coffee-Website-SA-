@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="giftcardANDreview.css">
+</head>
+<body>
+    <header>
+        <h1>Coffee Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#gift-card">Gift Card</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gift-card">
+            <h2>Gift Cards</h2>
+            <div class="gift-card-section">
+                <h3>Purchase Gift Card</h3>
+                <form id="purchase-form">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                    <label for="message">Personalized Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Purchase Gift Card</button>
+                </form>
+            </div>
+            <div class="gift-card-section">
+                <h3>Redeem Gift Card</h3>
+                <form id="redeem-form">
+                    <label for="redeem-id">Gift Card ID:</label>
+                    <input type="text" id="redeem-id" name="redeem-id" required>
+                    <button type="submit">Redeem</button>
+                </form>
+            </div>
+            <div class="gift-card-section">
+                <h3>Check Gift Card Balance</h3>
+                <form id="balance-form">
+                    <label for="balance-id">Gift Card ID:</label>
+                    <input type="text" id="balance-id" name="balance-id" required>
+                    <button type="submit">View Balance</button>
+                </form>
+                <div id="balance-result"></div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review-section">
+                <h3>Customer Reviews</h3>
+                <div class="filter-sort">
+                    <label for="filter">Filter:</label>
+                    <select id="filter">
+                        <option value="all">All</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <label for="sort">Sort:</label>
+                    <select id="sort">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="highest">Highest Rated</option>
+                        <option value="lowest">Lowest Rated</option>
+                    </select>
+                </div>
+                <div id="review-list"></div>
+            </div>
+            <div class="review-section">
+                <h3>Submit a Review</h3>//***
+                <form id="review-form">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="giftcardANDreview.js"></script>
+</body>
+</html>

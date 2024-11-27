@@ -1,0 +1,112 @@
+
+:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #C4A484;
+    --background-color: #F5E6D3;
+    --text-color: #3E2723;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+.gift-card-section, .review-section {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+input, textarea, select {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#review-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .filter-sort {
+        flex-direction: column;
+    }
+
+    .filter-sort label, .filter-sort select {
+        margin-bottom: 0.5rem;
+    }
+}
