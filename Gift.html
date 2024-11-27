@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Coffee Haven</title>
+    <link rel="stylesheet" href="twoPages.css">
+</head>
+<body>
+    <header>
+        <h1>Coffee Haven Gift Cards</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Review.html">Reviews</a>
+    </nav>
+    <main>
+        <section id="purchase-card">
+            <h2>Purchase Gift Card</h2>
+            <form id="purchase-form">
+                <label for="amount">Amount ($):</label>
+                <input type="number" id="amount" required min="1" step="0.01">
+                <label for="message">Personalized Message:</label>
+                <textarea id="message" rows="3"></textarea>
+                <button type="submit">Purchase Gift Card</button>
+            </form>
+        </section>
+
+        <section id="redeem-card">
+            <h2>Redeem Gift Card</h2>
+            <form id="redeem-form">
+                <label for="redeem-id">Gift Card ID:</label>
+                <input type="text" id="redeem-id" required>
+                <button type="submit">Confirm Redemption</button>
+            </form>
+        </section>
+
+        <section id="check-balance">
+            <h2>Check Gift Card Balance</h2>
+            <form id="check-balance-form">
+                <label for="check-id">Gift Card ID:</label>
+                <input type="text" id="check-id" required>
+                <button type="submit">View Balance Details</button>
+            </form>
+        </section>
+
+        <div id="confirmation" class="modal">
+            <div class="modal-content">
+                <h2>Purchase Confirmation</h2>
+                <p id="confirm-id"></p>
+                <p id="confirm-amount"></p>
+                <p id="confirm-message"></p>
+                <button id="checkout">Proceed to Checkout</button>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+    </footer>
+    <script src="twoPages.js"></script>
+</body>
+</html>

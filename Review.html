@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Coffee Haven</title>
+    <link rel="stylesheet" href="twoPages.css">
+</head>
+<body>
+    <header>
+        <h1>Coffee Haven Reviews</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Gift.html">Gift Cards</a>
+    </nav>
+    <main>
+        <section id="submit-review">
+            <h2>Submit a Review</h2>
+            <form id="review-form">
+                <div id="star-rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <input type="hidden" id="rating" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="3" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section id="read-reviews">
+            <h2>Customer Reviews</h2>
+            <div id="filter-sort">
+                <label for="filter">Filter by rating:</label>
+                <select id="filter">
+                    <option value="all">All ratings</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="date">Date</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div id="reviews-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+    </footer>
+    <script src="twoPages.js"></script>
+</body>
+</html>
