@@ -1,4 +1,5 @@
 
+​
 // Gift Card functionality
 let giftCards = [];
 
