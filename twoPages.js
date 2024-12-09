@@ -1,4 +1,7 @@
-
+Js 
+sara
+​
+You
 ​
 // Gift Card functionality
 let giftCards = [];
@@ -20,7 +23,7 @@ function loadGiftCards() {
 loadGiftCards();
 
 function generateId() {
-    return Math.random().toString(36).substring(2, 15);
+    return 'GC-' + Math.random().toString(36).substr(2, 9).toUpperCase();
 }
 
 // Gift Card Purchase
